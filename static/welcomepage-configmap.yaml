@@ -23,7 +23,7 @@ data:
           </head>
           <body>
             <div class="container">
-              <h1 class="text-center">Welcome to main cluster prod</h1>
+              <h1 class="text-center">Welcome to stage cluster stage</h1>
               <div id="messageBox" class="jumbotron">
                
               </div>
