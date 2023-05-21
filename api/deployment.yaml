@@ -12,11 +12,20 @@ spec:
     metadata:
       labels:
         app: api
+    spec:
       containers:
-      - name: api
+      - name: test-app
         image: gcr.io/google_containers/echoserver:1.4
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 80
-
-
+        - containerPort: 80
+        command: ["/bin/sleep", "3650d"]
+            
+        resources:
+          limits:
+            cpu: 250m
+            memory: 128Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
+      #nodeSelector:       
