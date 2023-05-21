@@ -28,20 +28,8 @@ spec:
               path: welcomepage.html
       containers:
       - name: nginx-test
-        readinessProbe:
-          failureThreshold: 3
-          
-          initialDelaySeconds: 10
-          periodSeconds: 30
-          successThreshold: 1
-          timeoutSeconds: 2
-        livenessProbe:
-          failureThreshold: 3
-          initialDelaySeconds: 30
-          periodSeconds: 10
-          successThreshold: 1
-          
-          timeoutSeconds: 1
+        
+        
         image: jba416/nginx-sso:oauth-module-1.4
         imagePullPolicy: IfNotPresent
         ports:
