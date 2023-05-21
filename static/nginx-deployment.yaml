@@ -30,10 +30,7 @@ spec:
       - name: nginx-test
         readinessProbe:
           failureThreshold: 3
-          httpGet:
-            path: /api/health
-            port: 8080
-            scheme: HTTP
+          
           initialDelaySeconds: 10
           periodSeconds: 30
           successThreshold: 1
@@ -43,9 +40,7 @@ spec:
           initialDelaySeconds: 30
           periodSeconds: 10
           successThreshold: 1
-          httpGet:
-            path: /api/health
-            port: 8080
+          
           timeoutSeconds: 1
         image: jba416/nginx-sso:oauth-module-1.4
         imagePullPolicy: IfNotPresent
