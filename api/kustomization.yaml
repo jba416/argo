@@ -4,5 +4,5 @@ namespace: marfeelns
 resources:
 
   - deployment.yaml
-  - nginx-ingress.yaml
+  - ingress.yaml
   - service.yaml
