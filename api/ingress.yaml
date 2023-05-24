@@ -7,7 +7,7 @@ metadata:
   namespace: marfeelns
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/subnets: subnet-7ca63372, subnet-8f9d4ee9
+    #alb.ingress.kubernetes.io/subnets: subnet-7ca63372, subnet-8f9d4ee9
     alb.ingress.kubernetes.io/target-type: ip
     kubernetes.io/ingress.class: alb
 spec:
